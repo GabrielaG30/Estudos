@@ -1,0 +1,147 @@
+body {
+    font-family: "Roboto", monospace;
+    min-height: 100px;
+    background-color: #202124;
+    background-size: 100vh;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 70px 0px 70px 0px;
+    background-color: #0f0f0f;
+    max-width: 550px;
+    background-image: linear-gradient(#303030, #000000);
+    margin: 0 auto;
+    border-radius: 25px;
+  }
+  
+  .container2 {
+    text-align: center;
+    padding: 10%;
+    background-color: #000000;
+    background-position: center;
+    border: 2px solid gray;
+    border-radius: 10px;
+    min-width: 60%;
+    float: center;
+  }
+  
+  .page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+  }
+  
+  .page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+  }
+  
+  .page-logo {
+    width: 200px;
+  }
+  .page-logo-ldb {
+    width: 90px;
+    margin-right: 50px;
+  }
+  
+  .alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  input {
+    margin: 12px;
+    padding: 6px;
+    border-radius: 5px;
+    background-color: #303030;
+    color: white;
+  }
+  
+  label {
+    color: gray;
+  }
+  
+  button {
+    margin-top: 12px;
+    padding: 6px 10px;
+    border-radius: 15px;
+    background: #00a884;
+    color: #fff;
+  }
+  
+  h2 {
+    color: #ffffff;
+    font-size: 30px;
+  }
+
+  /* .scan .fingerprint::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./img/fingerPrint_02.png);
+    background-size: 300px;
+    animation: animate 4s ease-in-out infinite;
+  } */
+
+  .scan{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scan .fingerprint{
+    position: relative;
+    width: 300px;
+    height: 380px;
+    background: url(./img/fingerPrint_01.png);
+    background-size: 300px;
+}
+.scan .fingerprint::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./img/fingerPrint_02.png);
+  background-size: 300px;
+  animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate{
+  0%,100%{height: 0%;}50%{height: 100%;}
+}
+.scan .fingerprint::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: #3fefef;
+  border-radius: 8px;
+  filter: drop-shadow(0 0 20px #3fefef)
+  drop-shadow(0 0 60px #3fefef);
+  animation: animate_line 4s ease-in-out infinite;
+}
+@keyframes animate_line{
+  0%,100%{top: 0%;}50%{top: 100%;}
+}
+.scan h3{
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  color: #3fefef;
+  filter: drop-shadow(0 0 20px #3fefef)
+  drop-shadow(0 0 60px #3fefef);
+  animation: animate_text 0.5s steps(1) infinite;
+}
+@keyframes animate_text{
+  0%,100%{opacity: 0;}50%{opacity: 1;}}

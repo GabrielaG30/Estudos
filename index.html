@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Calculadora</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="">
+      <h1 class="page-title">
+        Conversor de moedas
+      </h1>
+      <p class="page-subtitle">
+        Descubra os valores em Dolar e Euro
+      </p>
+      <label for="moeda">Insira o valor em Real:</label><br>
+      <input type="number" id="valor" size="7" /><br>
+      <button class="botao" type="submit" onclick="converterDolar()">Converter em Dolar</button>
+      <button class="botao" type="submit" onclick="converterEuro()">Converter em Euro</button>
+      <h2 id="valorConvertido"></h2>
+      
+      <div class="scan">
+        <div class="fingerprint"></div>
+        <h3>Scanning...</h3>
+    </div>  
+
+      <p style="font-size: 12px; font-style: italic; color: gray; padding-top: 30px; margin-bottom: -35px; ">cotação do dolar baseado em R$5,00 e o euro em R$5,53</p>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+    
+
+</body>
+
+</html>
